@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width,initial-scale=1'>
+    <title>Adidas Lifestyle</title>
+    <link rel='stylesheet' href='styles.css'>
+</head>
+
+<body class="nike-page">
+
+    <header>
+        <h1>ELITE KICKS</h1>
+        <nav>
+            <a href='index.html'>Home</a>
+            <a href='about.html'>About</a>
+            <a href='contact.html'>Contact</a>
+            <a href="#cartPanel">Cart (0)</a>
+        </nav>
+    </header>
+
+    <section class="nike-hero">
+        <h2>STEP INTO STYLE</h2>
+    </section>
+
+    <div class="brand-section">
+        <img src="Adidas logo.jpg" class="brand-logo">
+        <h2>ADIDAS</h2>
+
+        <div class="brand-actions">
+            <a href="adidas.html"><button class="back-btn">←</button></a>
+            <span class="btn active-btn">Adidas - Lifestyle</span>
+        </div>
+    </div>
+
+    <section class="products">
+
+        <div class="card"><img src="Samba OG L.jpg">
+            <h3>Samba OG</h3>
+            <p class="price">₱6,500</p><a href="#sizeModal" class="btn">Select Size</a>
+        </div>
+
+        <div class="card"><img src="Gazelle L.jpg">
+            <h3>Gazelle</h3>
+            <p class="price">₱6,000</p><a href="#sizeModal" class="btn">Select Size</a>
+        </div>
+
+        <div class="card"><img src="Superstar L.jpg">
+            <h3>Superstar</h3>
+            <p class="price">₱5,500</p><a href="#sizeModal" class="btn">Select Size</a>
+        </div>
+
+        <div class="card"><img src="Campus 00s L.jpg">
+            <h3>Campus 00s</h3>
+            <p class="price">₱6,000</p><a href="#sizeModal" class="btn">Select Size</a>
+        </div>
+
+        <div class="card"><img src="SL 72 OG L.jpg">
+            <h3>SL 72 OG</h3>
+            <p class="price">₱5,500</p><a href="#sizeModal" class="btn">Select Size</a>
+        </div>
+
+        <div class="card"><img src="Handball Spezial L.avif">
+            <h3>Handball Spezial</h3>
+            <p class="price">₱6,500</p><a href="#sizeModal" class="btn">Select Size</a>
+        </div>
+
+    </section>
+
+    <!-- SIZE MODAL -->
+<div id="sizeModal" class="size-modal">
+    <div class="modal-content">
+
+        <a href="#" class="close-btn">&times;</a>
+
+        <h3>Select Size</h3>
+
+        <!-- SIZE TABLE -->
+        <div class="size-columns">
+
+            <!-- EU -->
+            <div class="size-col">
+                <div class="size-title">EU (Starts 35)</div>
+                <div class="size-list">
+                    <input type="radio" name="size" id="eu35">
+                    <label for="eu35">35</label>
+
+                    <input type="radio" name="size" id="eu36">
+                    <label for="eu36">36</label>
+
+                    <input type="radio" name="size" id="eu37">
+                    <label for="eu37">37</label>
+
+                    <input type="radio" name="size" id="eu38">
+                    <label for="eu38">38</label>
+
+                    <input type="radio" name="size" id="eu39">
+                    <label for="eu39">39</label>
+
+                    <input type="radio" name="size" id="eu40">
+                    <label for="eu40">40</label>
+                </div>
+            </div>
+
+            <!-- US -->
+            <div class="size-col">
+                <div class="size-title">US</div>
+                <div class="size-list">
+                    <input type="radio" name="size" id="us4">
+                    <label for="us4">4</label>
+
+                    <input type="radio" name="size" id="us45">
+                    <label for="us45">4.5</label>
+
+                    <input type="radio" name="size" id="us5">
+                    <label for="us5">5</label>
+
+                    <input type="radio" name="size" id="us55">
+                    <label for="us55">5.5</label>
+
+                    <input type="radio" name="size" id="us6">
+                    <label for="us6">6</label>
+
+                    <input type="radio" name="size" id="us65">
+                    <label for="us65">6.5</label>
+                </div>
+            </div>
+
+            <!-- UK -->
+            <div class="size-col">
+                <div class="size-title">UK</div>
+                <div class="size-list">
+                    <input type="radio" name="size" id="uk3">
+                    <label for="uk3">3</label>
+
+                    <input type="radio" name="size" id="uk35">
+                    <label for="uk35">3.5</label>
+
+                    <input type="radio" name="size" id="uk4">
+                    <label for="uk4">4</label>
+
+                    <input type="radio" name="size" id="uk45">
+                    <label for="uk45">4.5</label>
+
+                    <input type="radio" name="size" id="uk5">
+                    <label for="uk5">5</label>
+
+                    <input type="radio" name="size" id="uk55">
+                    <label for="uk55">5.5</label>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- ADD TO CART BUTTON -->
+        <a href="#addedMessage" class="add-cart-btn">Add to Cart</a>
+
+    </div>
+</div>
+
+<!-- SUCCESS MESSAGE -->
+<div id="addedMessage" class="cart-message">
+    Successfully added to cart!
+</div>
+
+    <footer>
+        <p>© 2026 Elite Kicks | All Rights Reserved</p>
+    </footer>
+
+ <!-- CART SIDEBAR -->
+<div id="cartPanel" class="cart-panel">
+
+    <div class="cart-content">
+        
+        <!-- CLOSE BUTTON -->
+        <a href="#" class="close-cart">✕ Close</a>
+
+        <h3>Your Cart</h3>
+        <hr>
+
+        <!-- SAMPLE ITEMS -->
+        <div class="cart-items">
+
+            <!--<div class="cart-item">
+                <p>Nike Air Vapormax 2023</p>
+                <span>₱9,500</span>
+            </div>
+
+            <div class="cart-item">
+                <p>Nike Pegasus 40</p>
+                <span>₱7,695</span>
+            </div>-->
+
+        </div>
+
+        <hr>
+
+        <!-- TOTAL -->
+        <div class="cart-total">
+            <strong>Total: ₱0</strong>
+        </div>
+
+        <!-- CHECKOUT BUTTON -->
+        <a href="#" class="checkout-btn">Proceed to Checkout</a>
+
+    </div>
+</div>
+</body>
+
+</html>

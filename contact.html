@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width,initial-scale=1'>
+    <title>ELITE KICKS</title>
+    <link rel='stylesheet' href='styles.css'>
+</head>
+
+<body class="contact-page">
+    <header>
+        <h1>ELITE KICKS</h1>
+        <nav>
+            <a href='index.html'>Home</a>
+            <a href='about.html'>About</a>
+            <a href='contact.html' class='active'>Contact</a>
+            <a href="#cartPanel">Cart (0)</a>
+        </nav>
+    </header>
+
+    <div class="page-wrapper">
+        <h2 class="contact-title">GET IN TOUCH</h2>
+
+        <form class="contact-form" id="contactForm">
+            <label>Full Name</label>
+            <input type="text" placeholder="Your Name" required>
+
+            <label>Email Address</label>
+            <input type="email" placeholder="email@example.com" required>
+
+            <label>Message</label>
+            <textarea rows="5" placeholder="How can we help?" required></textarea>
+
+            <button type="submit" class="btn contact-btn">Send Message</button>
+        </form>
+
+        <!-- Custom Message Box -->
+        <div class="success-box" id="successBox">
+            Your message has been sent!
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2026 Elite Kicks | All Rights Reserved</p>
+    </footer>
+
+    <script>
+        const form = document.getElementById("contactForm");
+        const successBox = document.getElementById("successBox");
+
+        form.addEventListener("submit", function(e) {
+            e.preventDefault();
+
+            successBox.classList.add("show");
+
+            form.reset();
+
+            setTimeout(() => {
+                successBox.classList.remove("show");
+            }, 3000);
+        });
+    </script>
+
+      <!-- CART SIDEBAR -->
+<div id="cartPanel" class="cart-panel">
+
+    <div class="cart-content">
+        
+        <!-- CLOSE BUTTON -->
+        <a href="#" class="close-cart">✕ Close</a>
+
+        <h3>Your Cart</h3>
+        <hr>
+
+        <!-- SAMPLE ITEMS -->
+        <div class="cart-items">
+
+            <!--<div class="cart-item">
+                <p>Nike Air Vapormax 2023</p>
+                <span>₱9,500</span>
+            </div>
+
+            <div class="cart-item">
+                <p>Nike Pegasus 40</p>
+                <span>₱7,695</span>
+            </div>-->
+
+        </div>
+
+        <hr>
+
+        <!-- TOTAL -->
+        <div class="cart-total">
+            <strong>Total: ₱0</strong>
+        </div>
+
+        <!-- CHECKOUT BUTTON -->
+        <a href="#" class="checkout-btn">Proceed to Checkout</a>
+
+    </div>
+</div>
+</body>
+
+</html>
